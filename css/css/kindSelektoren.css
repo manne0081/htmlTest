@@ -1,0 +1,21 @@
+html {
+    background-color: lightgray;
+}
+
+p > span {
+    color: darkgoldenrod;
+
+}
+
+span > b {
+    color: darkcyan;
+}
+
+p > b {
+    color: darkmagenta
+}
+
+html > body > p > span > i {
+    background-color: lime;
+    font-weight: bold;
+}

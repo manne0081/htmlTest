@@ -1,0 +1,32 @@
+/*  Nicht vererbt werden z.B.
+    - Border
+    - Background-Color
+
+    Inherit erbt nur von dem Eltern-Element, nicht von den weiteren Vorfahren...
+*/
+
+html {
+    background-color: lightgrey;
+}
+
+body {
+    color: darkgoldenrod;
+    border: 1px solid red;
+}
+
+h1 {
+    color: darkolivegreen;
+    border: inherit;
+}
+
+span {
+    color: black;
+}
+
+p{
+    border: inherit;
+}
+
+b {
+    color: orange;
+}

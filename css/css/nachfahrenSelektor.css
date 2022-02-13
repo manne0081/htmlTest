@@ -1,0 +1,15 @@
+html {
+    background-color: lightgray;
+}
+
+p b {
+    color: darkgoldenrod;
+}
+
+body span {
+    background-color: lime;
+}
+
+html p i {
+    background-color: orange;
+}

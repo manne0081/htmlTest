@@ -1,0 +1,23 @@
+.warnung {
+
+}
+
+#wichtig {
+
+}
+
+b ~ span > b {
+    color: lightsalmon;
+}
+
+p span.warnung {
+    background-color: lightcoral;
+}
+
+.warnung ~ b {
+    font-size: 20px;
+}
+
+html head ~ body > p > b ~ #wichtig {
+    background-color: lime;
+}

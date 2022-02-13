@@ -1,0 +1,11 @@
+/*  Geschwister-Selektoren können nur für
+    kleine (nachfolgende) Geschwister verwendet werden
+*/
+
+span ~ i {
+    color: red;
+}
+
+i ~ b {
+    background-color: lightcoral;
+}

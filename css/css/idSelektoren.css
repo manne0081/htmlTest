@@ -1,0 +1,8 @@
+/*  ID's sind immer eindeutige Kennzeichner für HTML-Elemente.
+    Sie sollten niemals für mehr als ein HTML-Element verwendet werden, auch
+    wenn es praktisch möglich wäre.
+*/
+
+#warnung {
+    color: orange;
+}
