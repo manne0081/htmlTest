@@ -1,0 +1,114 @@
+/* Am besten bei allen Projekten * = border-box einstellen... */
+
+*  {
+    box-sizing: border-box;
+}
+
+body > div {
+    background-color: lightgray;
+    width: 300px;
+    /* height: 300px; */
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+div > div {
+    /* background-color: aqua; */
+    border-radius: 8px;
+    padding: 8px;
+}
+
+body > div:hover {
+    background-color: lightblue;
+}
+
+.div1 {    
+    border: 5px solid black;    
+    padding: 20px 20px 20px 40px;
+    margin: 10px 0 10px 20px;
+}
+
+.div2 {    
+    margin: 10px 0 10px 20px;
+    padding: 10px 10px 10px 20px;
+    /* border: 5px dotted black; */
+}
+
+.div3 {    
+    border-width: 4px;
+    border-style: solid;
+    border-color: black;
+}
+
+.div4 {    
+    border-width: 4px;
+    border-style: dotted;
+    border-color: black;
+}
+
+.div5 {    
+    border-width: 4px;
+    border-style: dashed;
+    border-color: black;
+}
+
+.div6 {    
+    border-width: 4px;
+    border-style: double;
+    border-color: black;
+}
+
+.div7 {    
+    border-width: 20px;
+    border-style: groove;
+    border-color: red
+}
+
+.div8 {    
+    border-width: 20px;
+    border-style: ridge;
+    border-color: red;
+}
+
+.div9 {    
+    border-width: 20px;
+    border-style: inset;
+    border-color: red;
+}
+
+.div10 {    
+    border-width: 20px;
+    border-style: outset;
+    border-color: red;
+}
+
+.div11 {    
+    border-bottom: 10px solid blue;
+    border-top: 4px dotted red;
+    border-right: 4px solid yellow;
+    border-left: 4px dashed green;
+}
+
+.div12 {    
+    border-bottom-width: 10px;
+    border-bottom-style: solid;
+    border-bottom-color: blue;
+
+    border-top: 4px dotted red;
+    border-right: 4px solid yellow;
+    border-left: 4px dashed green;
+}
+
+.div13 {    
+    color: white;
+    font-weight: bold;
+    height: 50px;
+    width: 400px;
+    padding: 7px;
+    font-size: 20px;
+    box-sizing: border-box;
+    background-color: deepskyblue;
+    border-left: 10px solid dodgerblue;
+    
+}
+

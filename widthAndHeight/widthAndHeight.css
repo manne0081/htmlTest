@@ -1,0 +1,9 @@
+p {
+    background-color: lightgray;
+}
+
+p ~ p {
+    background-color: aquamarine;
+    width: 400px;
+    height: 300px;
+}
