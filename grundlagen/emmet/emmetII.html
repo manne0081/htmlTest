@@ -1,0 +1,104 @@
+h1[role="Überschrift"]
+<h1 role="Überschrift">test</h1>
+
+h1[role="Überschrift" data-value="5"]
+<h1 role="Überschrift" data-value="5"></h1>
+
+div.test$*5
+<div class="test1"></div>
+<div class="test2"></div>
+<div class="test3"></div>
+<div class="test4"></div>
+<div class="test5"></div>
+
+div.test$$$*12
+<div class="test001"></div>
+<div class="test002"></div>
+<div class="test003"></div>
+<div class="test004"></div>
+<div class="test005"></div>
+<div class="test006"></div>
+<div class="test007"></div>
+<div class="test008"></div>
+<div class="test009"></div>
+<div class="test010"></div>
+<div class="test011"></div>
+<div class="test012"></div>
+
+div.test$*5{test$}
+<div class="test1">test1</div>
+<div class="test2">test2</div>
+<div class="test3">test3</div>
+<div class="test4">test4</div>
+<div class="test5">test5</div>
+
+div.test$@3*8
+<div class="test3"></div>
+<div class="test4"></div>
+<div class="test5"></div>
+<div class="test6"></div>
+<div class="test7"></div>
+<div class="test8"></div>
+<div class="test9"></div>
+<div class="test10"></div>
+
+div.test$@3*8{text$}
+<div class="test3">text1</div>
+<div class="test4">text2</div>
+<div class="test5">text3</div>
+<div class="test6">text4</div>
+<div class="test7">text5</div>
+<div class="test8">text6</div>
+<div class="test9">text7</div>
+<div class="test10">text8</div>
+
+div.test$@-*5
+<div class="test5"></div>
+<div class="test4"></div>
+<div class="test3"></div>
+<div class="test2"></div>
+<div class="test1"></div>
+
+div.test$@-5*5
+<div class="test9"></div>
+<div class="test8"></div>
+<div class="test7"></div>
+<div class="test6"></div>
+<div class="test5"></div>
+
+div>(p>span)+div
+<div>
+    <p>
+        <span></span>
+    </p>
+    <div>
+
+    </div>
+</div>
+
+div>p>span+div
+<div>
+    <p>
+        <span></span>
+        <div></div>
+    </p>
+</div>
+
+div>(p>span+span)+div
+<div>
+    <p>
+        <span></span>
+        <span></span>
+    </p>
+    <div></div>
+</div>
+
+div>(p>span>span)+div
+<div>
+    <p>
+        <span>
+            <span></span>
+        </span>
+    </p>
+    <div></div>
+</div>
