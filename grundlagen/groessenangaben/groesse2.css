@@ -1,0 +1,12 @@
+html, body {
+    height: 100%;
+}
+
+html {
+    background-color: lightgray;
+}
+
+body {
+    background-color: white;
+}
+

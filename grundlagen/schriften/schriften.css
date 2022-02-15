@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Shizuru&display=swap');
+
+body {
+    font-family: Tahoma, Verdana, sans-serif;
+}
+
+.span1 {
+    font-family: serif;
+}
+
+.span2 {
+    font-family: sans-serif;
+}
+
+.span3 {
+    font-family: cursive;
+}
+
+.span4 {
+    font-family: fantasy;
+}
+
+.span5 {
+    font-family: monospace;
+}
+
+.googleFonts1 {
+    font-family: roboto, sans-serif;
+}
+
+.googleFonts2 {
+    font-family: 'Shizuru', cursive;;
+}
+

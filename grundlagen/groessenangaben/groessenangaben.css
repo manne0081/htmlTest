@@ -1,0 +1,45 @@
+/*  Wann benutze ich welche Größenangabe?
+
+    - Schriftgröße:                     em oder rem (Schriftgröße des HTML-Elements in px)
+
+    - Größenangaben von Elementen:      px, %, em oder rem
+
+    - padding, margin, border-radius:   em, rem, oder %
+
+    - border::after                     px (fast immer)
+
+ */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;   
+}
+
+body {
+    margin: 0;
+    font-size: 20px;
+}
+
+.absolute {
+    background-color: lightgray;
+    width: 400px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.percent {
+    background-color: aquamarine;
+    width: 30%;
+    height: 30%;
+}
+
+div.em {
+    font-size: 2em;
+}
+
+div.rem {
+    font-size: 2rem;
+}

@@ -1,0 +1,80 @@
+/*  Farben in Hex-Code
+    0 - 9  ->  A - F  =  0 - 15
+    15 * 15  =  255 Farbabstufungen pro Farbe
+    255 x 255 x 255 Farben
+    16.777.216 verschiedene Farben
+    
+    RGB  ->  ROT / GRÜN / BLAU
+
+    #FF0000  ->  100% ROT
+    #00FF00  ->  100% Grün
+    #0000FF  ->  100% Blau
+
+    rgb(255, 255, 255)  ->  Alle Farben zu vollem Anteil  ->  Weiß
+    #FFFFFF             ->  Alle Farben zu vollem Anteil  ->  Weiß
+    
+    ROT + GRÜN = Gelb
+    ROT + BLAU = LILA
+    GRÜN + BLAU = TÜRKIS
+
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: lightgray; */
+}
+
+div {
+    padding: 5px 10px 0;
+    margin: 4px;
+}
+
+.div1 {
+    width: 400px;
+    height: 50px;
+    background-color: olivedrab;
+    color: white;
+}
+
+.div2 {
+    width: 400px;
+    height: 50px;
+    background-color: #00FFFF;
+}
+
+.div3 {
+    width: 400px;
+    height: 50px;
+    background-color: rgb(33, 77, 99);
+    color: white;
+}
+
+.hintergrund {
+    width: 600px;
+    height: 100px;
+    padding: 20px;
+    background-color: rgb(40, 60, 80); 
+    background-color: lightgray;
+}
+
+.div4 {
+    width: 400px;
+    height: 50px;
+    background-color: rgba(33, 77, 99, 0.5);
+}
+
+.div5 {
+    width: 400px;
+    height: 50px;
+    background-color: hsl(180, 100%, 50%);
+}
+
+.div6 {
+    width: 400px;
+    height: 50px;
+    background-color: hsla(180, 100%, 30%, 0.3);
+}
+

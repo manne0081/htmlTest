@@ -1,0 +1,52 @@
+/*  eot > embaded open type > ie + edge (alle anderen kommen nicht damit klar)
+    ttf > truetype fonts > (Safari, Android, IOS - ie < v9 kommt nicht damit klar)
+    otf > opentype fonts > (ie < v9 kommt nicht damit klar)
+    woff > web opentype format (Firefox + Chrome sehr gut geeignet
+    woff2 > sehr neu (Moderne Browser)
+    svg > (alst ios systeme)
+
+    italic <-> oblique (Ähnlich, müsste man mal googeln...)
+
+    #########################################
+    font-faces immer als erstes definieren...
+    #########################################
+
+ */
+
+@font-face {
+    font-family: "spectral";
+    src:    url(spectral-regular.ttf) format("truetype"),
+            url(spectral-regular.woff2) format("woff2");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "spectral";
+    src:    url(spectral-bold.woff2) format("woff2");
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "spectral";
+    src:    url(spectral-italic.woff2) format("woff2");
+    font-style: italic;
+    font-weight: normal;
+}
+
+span {
+    font-family: spectral;
+}
+
+.span1 {
+    font-size: 20px;
+}
+
+.span2 {
+    font-weight: bold;
+}
+
+.span3 {
+    font-style: italic;
+}
