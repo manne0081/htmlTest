@@ -1,0 +1,45 @@
+/* Äußeres Element muss relative sein und das innere dann absolute */
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.relative {
+    /* Relativ zu seiner eigentlichen Position.... */
+    background-color: lightgray;
+    width: 400px;
+    height: 50px;
+    
+    position: relative;
+    top: 50px;
+    left: 60px;
+}
+
+/*  Wird das äußere DIV verschoben, bleibt das innere DIV absolute am äußeren ausgerichtet
+
+    Absulute richtet sich immer am Eltern-Element aus. 
+    Ist keine selbst definiertes Eltern-Element vorhanden, wird das HTML-Element als Eltern-Element verwendet */
+
+.absolute {
+    /* Konkrete Positionierung nötig */
+    background-color: aquamarine;
+    width: 50px;
+    height: 50px;
+
+    position: absolute;
+    /* top: 10px; */
+    right: 10px;
+    bottom: 10px;
+}
+
+span {
+    position: relative;
+    top: 30px;
+    left: 30px;
+}
+
+b {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang='de'>
+
+    <header>
+        <meta charset='utf-8'></meta>
+        <title>Listen in HTML</title>
+        <link rel='stylesheet' type='text/css' href='listen.css'>
+    </header>
+
+    <body>
+
+        <ol>
+            <dl>Platzierungen bei Jugend forscht</dl>
+            <li>Maria</li>
+            <li>Peter</li>
+            <li>Simon</li>
+            <li>Mia</li>
+        </ol>
+
+        <ul>
+            <dl>Einkaufsliste</dl>
+            <li>Nudeln</li>
+            <li>Äpfel</li>
+            <li>Kartoffeln</li>
+            <li>Schokolade</li>
+        </ul>
+
+        <!-- Achtung beim schachteln von Listen, es gibt 2 Möglichkeiten, die viele Browser beide darstellen können.
+             Die falsche Variante ist allerding nicht gesichert. -->
+        <ul>
+            <dl>Testliste zum verschachteln</dl>
+            <li>Text
+                <!-- Hier die richtige Schachtelung -> Das ul-Element in einem li-Element... -->
+                <ol>
+                    <li>Text
+                        <ul>
+                            <li>Text</li>
+                            <li>Text</li>
+                        </ul>
+                    </li>
+                    <li>Text
+                        <ul>
+                            <li>Text</li>
+                            <li>Text</li>
+                            <li>Text</li>
+                        </ul>
+                    </li>
+                    <li>Text</li>
+                </ol>
+            </li>
+
+            <br><br>
+            <li>Text</li>
+            <!-- Hier eine falsche Schachtelung -> Das ul-Element unter einem li-Elemente... -->
+                <ul>
+                    <li>Test</li>
+                </ul>
+            <li>Text</li>
+        </ul>
+
+    </body>
+
+</html>

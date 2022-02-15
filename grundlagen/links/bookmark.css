@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+div {
+    background-color: #00F;
+    height: 300px;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.unserZiel {
+    background-color: aquamarine;
+    border: 20px solid red;
+}

@@ -1,0 +1,27 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+dl {
+    font-weight: bold;
+}
+
+.list1 {
+    list-style-type: square;
+}
+
+.list2 {
+    list-style-position: inside;
+}
+
+.list3 {
+    list-style-image: url(pfeil.png);
+}
+
+.list4 {
+    list-style: square inside url(pfeil.png); /* sqare ist als Fallback, falls der Pfeil nicht verfügbar ist */
+}
+
+.list5 > li {
+    display: inline-block;
+}

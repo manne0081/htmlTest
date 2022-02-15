@@ -1,0 +1,31 @@
+body {
+    height: 1500px;
+}
+
+.fixed {
+    /* Richtet sich nicht an Elementen aus sondern am View-Port */
+
+    background-color: lightcoral;
+    width: 300px;
+    height: 500px;
+    
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
+.sticky {
+        background-color: lightcoral;
+        width: 300px;
+        height: 500px;
+
+        position: sticky;
+        top: 50px;
+        left: 50px;
+        margin-top: 200px;
+}
+
+.static {
+    /* Dies ist die Standardausrichtig für Elemente -> Alle Angaben wie top: xxx werden kpl. Ignoriert... */
+    position: static;
+}
