@@ -1,0 +1,61 @@
+div {
+    width: 400px;
+    height: 100px;
+    border: 2px solid gray;
+    margin-bottom: 20px;
+}
+
+#test01 {
+    background-color: #FF5EA2;
+}
+
+#test02 {
+    background-image: url(hintergrund.png);
+}
+
+#test03 {
+    background-image: url(hintergrund.png);
+    background-repeat: repeat-x;
+}
+
+#test04 {
+    background-image: url(hintergrund.png);
+    background-repeat: repeat-y;
+}
+
+#test05 {
+    background-image: url(hintergrund.png);
+    background-repeat: no-repeat;
+}
+
+#test06 {
+    background-image: url(hintergrund.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+#test07 {
+    background-image: url(hintergrund.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+#test08 {
+    background-image: url(hintergrund.png);
+    background-repeat: no-repeat;
+    background-position: right 30px bottom 10px;
+    
+}
+
+#test09 {
+    background-image: url(hintergrund.png);
+    /* background-attachment: scroll;  ->  Das ist Standard.... */
+    background-attachment: fixed;
+}
+
+/* Shorthand -> color / image / repeat / attachment / position */
+
+#test10 {
+    background: #FF5EA2 url(hintergrund.png) repeat-y fixed left 20px top 10px;
+    /* background: url(hintergrund.png) no-repeat center center; */
+}

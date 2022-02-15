@@ -16,7 +16,7 @@
 	// 	"description": "Log output to console"
 	// }
 
-    "html-basic": {
+    "htmlBasic": {
         "prefix": ["html"],
         "body": ["<!DOCTYPE html>\n<html lang='de'>\n\n\t<header>\n\t\t<meta charset='utf-8'></meta>\n\t\t<title></title>\n\t\t<link rel='stylesheet' type='text/css' href=''>\n\t</header>\n\n\t<body>\n\t\t\n\t</body>\n\n</html>"],
         "description": "HTML Basicstructure"
