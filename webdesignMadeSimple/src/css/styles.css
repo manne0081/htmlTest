@@ -1,6 +1,33 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap'); */
+@font-face {
+    font-family: "lato";
+    src:    url(../fonts/Lato/Lato-Regular.ttf) format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
 
-/*  Farben:
+@font-face {
+    font-family: "lato";
+    src:    url(../fonts/Lato/Lato-Bold.ttf) format("truetype");
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "raleway";    
+    src:    url(../fonts/Raleway/static/Raleway-ExtraLight.ttf) format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "raleway";    
+    src:    url(../fonts/Raleway/static/Raleway-Bold.ttf) format("truetype");
+    font-style: normal;
+    font-weight: bold;
+}
+
+/*  === Farben === */
+/*
     Blau        -> #1F4E8C
     Dunkelgrau  -> #3D3F45
     Hellgrau    -> #E5E5E5
