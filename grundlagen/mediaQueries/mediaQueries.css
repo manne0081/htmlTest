@@ -1,0 +1,35 @@
+/* Diese Regeln sind Viewport unabhängig */
+.test {
+    background-color: cyan;
+    width: 600px;
+    height: 200px;
+}
+
+/* Media-Query -> selfhtml.org */
+
+/* Diese Regeln treffen zu bei einm Viewport von über 800px breite */
+@media (min-width: 800px) {
+    .test {
+        background-color: magenta;
+        width: 800px;
+        height: 300px;
+    }
+}
+
+/* Diese Regeln treffen zu bei einm Viewport von genau 850px breite */
+@media (width: 850px) {
+    .test {
+        background-color: yellow;
+        width: 600px;
+        height: 200px;
+    }
+}
+
+/* Diese Regeln treffen zu bei einm Viewport von unter 400px breite */
+@media (max-width: 400px) {
+    .test {
+        background-color: black;
+        width: 200px;
+        height: 50px;
+    }
+}

@@ -1,0 +1,13 @@
+p {
+    background-color: gray;
+}
+
+.float-left {
+    float: left;
+    margin: 20px;
+}
+
+.float-right {
+    float: right;
+    margin: 20px;
+}
