@@ -33,47 +33,56 @@ body {
     font-size: 1.1rem;
 }
 
-.nav-header > a > img {
-    height: 30px;
-    width: auto;
-    position: absolute;
-    left: 2rem;
-    top: 0.5rem;
-}
-
-.nav-header > ul {
-    position: absolute;
-    right: 2rem;
+.nav-header .container,
+.nav-header .row,
+.nav-header .col-6 {
     height: 100%;
 }
 
-.nav-header > ul > li {
+.nav-header .col-6 {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.nav-header a > img {
+    float: left;
+    height: 30px;
+    width: auto;
+    margin-top: 0.55rem;
+}
+
+.nav-header ul {
+    float: right;
+    height: 100%;
+}
+
+.nav-header ul > li {
     display: inline-block;
     height: 100%;
     padding: 0 0.5rem 0;
 }
 
-.nav-header > ul > li > a {
+.nav-header ul > li > a {
     display: inline-block;
     margin-top: 0.8rem;    
 }
 
-.nav-header > ul > li > a:link {
+.nav-header ul > li > a:link {
     color: #FFF;
     text-decoration: none;
 }
 
-.nav-header > ul > li > a:hover {
+.nav-header ul > li > a:hover {
     color: #E5E5E5;
     text-decoration: none;
 }
 
-.nav-header > ul > li > a:active {
+.nav-header ul > li > a:active {
     color: #E5E5E5;
     text-decoration: none;
 }
 
-.nav-header > ul > li > a:visited {
+.nav-header ul > li > a:visited {
     color: #FFF;
     text-decoration: none;
 }
@@ -115,11 +124,12 @@ body {
     background-size: contain;
 }
 
-
+/* ################################ === */
 /* === GRID - SYSTEM (Sichtbarkeit) === */
+/* ################################ === */
 
-.border, .border * {
-    border: 0.5px solid rgb(185, 179, 179);
+/* .border, .border * {
+    border: 1px solid rgb(185, 179, 179);
 }
 
 [class*="col-"] {
@@ -132,7 +142,7 @@ p {
     margin: 0;
     color: #FFF;
     text-align: center;
-}
+} */
 
 /* === GRID - SYSTEM === */
 
