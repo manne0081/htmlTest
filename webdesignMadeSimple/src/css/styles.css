@@ -13,6 +13,13 @@
 }
 
 @font-face {
+    font-family: "lato";
+    src:    url(../fonts/Lato/Lato-Italic.ttf) format("truetype");
+    font-style: italic;
+    font-weight: normal;
+}
+
+@font-face {
     font-family: "raleway";    
     src:    url(../fonts/Raleway/static/Raleway-ExtraLight.ttf) format("truetype");
     font-style: normal;
@@ -26,6 +33,13 @@
     font-weight: bold;
 }
 
+@font-face {
+    font-family: "raleway";    
+    src:    url(../fonts/Raleway/static/Raleway-Italic.ttf) format("truetype");
+    font-style: italic;
+    font-weight: normal;
+}
+
 /*  === Farben === */
 /*
     Blau        -> #1F4E8C
@@ -33,6 +47,8 @@
     Hellgrau    -> #E5E5E5
     Rot         -> #A62C21    
 */
+
+/* === Globale Stylings === */
 
 * {
     box-sizing: border-box;
@@ -47,6 +63,20 @@ html {
 body {
     font-family: 'Raleway', 'Lato', 'Helvetica Neue', 'Arial', sans-serif;
     margin: 0;
+}
+
+/* === Generelles === */
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear:both;
+}
+
+/* === Achtung - Important === */
+
+.active {
+    background-color: #A62C21 !important;
 }
 
 /* === Navigationsleiste === */
@@ -114,16 +144,56 @@ body {
     text-decoration: none;
 }
 
-.active {
-    background-color: #A62C21;
+/* === Navigationsleiste - Mobile === */
+
+.nav-mobile-dropdown {
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+
+.nav-mobile-button {
+    color: #fff;
+    float: right;
+    font-size: 1.8rem;
+    border: 1px solid #FFF;
+    width: 57px;
+    height: 37px;
+    position: relative;
+    margin-top: 6px;
+    margin-bottom: 8px;
+}
+
+.nav-mobile-dropdown:hover > .nav-mobile-content {
+    display: block;
+}
+
+.nav-mobile-button > span {
+    position: absolute;
+    top: 0px;
+    left: 18px;
+}
+
+.nav-mobile-content {
+    position: absolute;
+    right: 0px;
+    top: 50px;
+    display: none;
+}
+
+.nav-mobile-content > ul > li {
+    display: block;
+    background-color: #3D3F45;
+    height: 50px;
+    padding: 0 1.4rem;
+    text-align: center;
+}
+
+.nav-mobile {
+    display: none;
 }
 
 /* === Header-Banner === */
-
-/* img {
-    width: 100%;
-    height: auto;
-} */
 
 .header-banner {    
     background: url(../assets/hintergrund.jpg) no-repeat;
@@ -140,7 +210,6 @@ body {
         backgroung-size: ontain
         An was soll sich die Größe des Hintergrundes skallieren
     */
-
 }
 
 .header-banner-small {    
@@ -217,12 +286,14 @@ p {
 */
 
 @media (max-width: 1024px) {
+    /* Umbrueche für GRID-System */
     .col-1 {
         width: 33.333%;
     }
 }
 
 @media (max-width: 768px) {
+    /* Umbrueche für GRID-System */
     .col-1 {
         width: 50%;
     }
@@ -232,9 +303,19 @@ p {
     .col-3 {
         width: 100%;
     }
+
+    /* Toggle Navigation */
+    .nav-desktop {
+        display: none;
+    }
+
+    .nav-mobile {
+        display: block;
+    }
 }
 
 @media (max-width: 480px) {
+    /* Umbrueche für GRID-System */
     .col-1 {
         width: 100%;
     }
