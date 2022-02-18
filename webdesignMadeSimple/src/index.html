@@ -5,13 +5,7 @@
         <meta charset='UTF-8'>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Webdesign made SIMPLE</title>
-        <link rel='stylesheet' type='text/css' href='css/styles.css'>
-
-        <!-- Externe Schriftart -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-        <!-- ################## -->
+        <link rel='stylesheet' type='text/css' href='css/styles.css'>        
     </head>
 
     <body>
@@ -19,33 +13,55 @@
         <!-- === Navigationsleiste === -->
 
         <nav class="nav-header">
-            <div class="container">
+
+            <div class="container nav-desktop">
                 <div class="row">
-                    <div class="col-6">
-                        
+                    <div class="col-6">                        
                         <a href="index.html">
                             <img src="assets/webdesign-logo.png" alt="Logo">
-                        </a>
-                        
+                        </a>                        
                         <ul>
                             <li class="active"><a href="index.html">Startseite</a></li>
                             <li><a href="leistungen.html">Leistungen</a></li>
                             <li><a href="kontakt.html">Kontakt</a></li>
                             <li><a href="impressum.html">Impressum</a></li>
                         </ul>
-
                     </div>
                 </div>
             </div>
+
+            <div class="container nav-mobile">
+                <div class="row">
+                    <div class="col-6">
+                        <a href="index.html">
+                            <img src="assets/webdesign-logo.png" alt="Logo">
+                        </a>                        
+                        <div class="nav-mobile-dropdown clearfix">
+                            <div class="nav-mobile-button">
+                                <span>&equiv;</span>
+                            </div>                            
+                            <div class="nav-mobile-content clearfix">
+                                <ul>
+                                    <li class="active"><a href="index.html">Startseite</a></li>
+                                    <li><a href="leistungen.html">Leistungen</a></li>
+                                    <li><a href="kontakt.html">Kontakt</a></li>
+                                    <li><a href="impressum.html">Impressum</a></li>
+                                </ul>
+                            </div>                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </nav>
 
         <!-- === Header-Banner === -->
 
         <header class="header-banner"></header>
 
+        <!-- === Content === -->
 
-
-
+        
 
 
 
