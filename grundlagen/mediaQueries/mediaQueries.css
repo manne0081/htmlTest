@@ -7,7 +7,7 @@
 
 /* Media-Query -> selfhtml.org */
 
-/* Diese Regeln treffen zu bei einm Viewport von über 800px breite */
+/* Diese Regeln treffen zu bei einem Viewport von über 800px breite */
 @media (min-width: 800px) {
     .test {
         background-color: magenta;
@@ -16,7 +16,7 @@
     }
 }
 
-/* Diese Regeln treffen zu bei einm Viewport von genau 850px breite */
+/* Diese Regeln treffen zu bei einem Viewport von genau 850px breite */
 @media (width: 850px) {
     .test {
         background-color: yellow;
@@ -25,7 +25,7 @@
     }
 }
 
-/* Diese Regeln treffen zu bei einm Viewport von unter 400px breite */
+/* Diese Regeln treffen zu bei einem Viewport von unter 400px breite */
 @media (max-width: 400px) {
     .test {
         background-color: black;
