@@ -18,7 +18,7 @@
             }
 
             .box .rowx {
-                border: 1px dotted grey;
+                /* border: 1px dotted grey; */
                 height: 110px;
             }
 
@@ -33,7 +33,7 @@
 
             .box .rowx.content {
                 flex: 1 1 auto;
-                background-color: blue;
+                /* background-color: blue; */
             }
 
             .box .rowx.footer {
@@ -53,9 +53,11 @@
             .additional {
                 background-color: lime;
                 height: 100%;
-            }
-
+            }     
             
+            .navigation, .content, .additional {
+                padding: 12px;
+            }
         </style>
     </head>
 
@@ -67,7 +69,7 @@
                 <br />
                 <br />(fixed height)</p>
             </div>
-            <div class="rowx content">
+            <div class="row rowx content">
 
                 <div class="col-2 navigation">col1</div>
                 <div class="col-8 content">col2</div>
@@ -77,6 +79,7 @@
                 <b>content</b>
                 (fills remaining space)
               </p> -->
+
             </div>
             <div class="rowx footer">
               <p><b>footer</b> (fixed height)</p>
