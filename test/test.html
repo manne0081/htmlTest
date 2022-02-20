@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang='de'>
+
+    <head>
+        <meta charset='utf-8'></meta>
+        <title></title>
+        <link rel='stylesheet' type='text/css' href='css/main.css'>
+        <style>
+            html, body {
+                height: 100%;
+                margin: 0;
+            }
+
+            .box {
+                display: flex;
+                flex-flow: column;
+                height: 100%;
+            }
+
+            .box .rowx {
+                border: 1px dotted grey;
+                height: 110px;
+            }
+
+            .box .rowx.header {
+                flex: 0 1 auto;
+                /* The above is shorthand for:
+                flex-grow: 0,
+                flex-shrink: 1,
+                flex-basis: auto
+                */
+            }
+
+            .box .rowx.content {
+                flex: 1 1 auto;
+                background-color: blue;
+            }
+
+            .box .rowx.footer {
+                flex: 0 1 40px;
+            }
+            
+            .navigation {
+                background-color: lime;
+                height: 100%;
+            }
+            
+            .content {
+                background-color: orange;
+                height: 100%;
+            }
+            
+            .additional {
+                background-color: lime;
+                height: 100%;
+            }
+
+            
+        </style>
+    </head>
+
+    <body>
+       
+        <div class="box">
+            <div class="rowx header">
+              <p><b>header</b>
+                <br />
+                <br />(fixed height)</p>
+            </div>
+            <div class="rowx content">
+
+                <div class="col-2 navigation">col1</div>
+                <div class="col-8 content">col2</div>
+                <div class="col-2 additional">col3</div>
+
+              <!-- <p>
+                <b>content</b>
+                (fills remaining space)
+              </p> -->
+            </div>
+            <div class="rowx footer">
+              <p><b>footer</b> (fixed height)</p>
+            </div>
+          </div>
+
+    </body>
+
+</html>
