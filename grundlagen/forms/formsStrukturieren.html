@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang='de'>
+
+    <head>
+        <meta charset='utf-8'></meta>
+        <title>Forms Strukturieren</title>
+        <style>
+            fieldset {
+                display: inline-block;
+            }
+        </style>
+    </head>
+
+    <body>
+        
+        <form action="formsStrukturieren.html" method="get">
+
+            <fieldset>
+                <legend>Personenbezogene Daten</legend>
+
+                    <label for="name">Name</label> <!-- for bezieht sich auf die ID eines anderen Elements -->
+                    <input id="name" type="text" name="username" placeholder="Dein Name"><br>
+                    <br>
+                    <fieldset>
+                        <legend>Geschlecht:</legend>
+                        <!-- Immer Label's benutzen -> Wenn man sie nicht sehen möchte, über CSS "display = none" ausblenden. -->
+                        <!-- Screenreader können dieses Label's dann lesen. -->
+                            <label for="maennlich">Männlich</label>   
+                            <input id="maennlich" type="radio" name="geschlecht" value="m">
+                            
+                            <label for="weiblich">Weiblich</label>   
+                            <input id="weiblich" type="radio" name="geschlecht" value="w">
+                            
+                            <label for="divers">Divers</label>   
+                            <input id="divers" type="radio" name="geschlecht" value="d">     
+                    </fieldset>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Login-Daten</legend>
+
+                    <label for="email">E-Mail</label>
+                    <input id="email" type="email" name="email" placeholder="Deine E-Mail Adresse"><br>
+                    <br>
+                    <label for="password">Passwort</label>
+                    <input id="password" type="password" name="password" placeholder="Dein Kennwort"><br>                
+            </fieldset>
+
+            <br>
+            <br>
+
+            <button type="submit">Submit</button>
+
+        </form>
+
+    </body>
+
+</html>

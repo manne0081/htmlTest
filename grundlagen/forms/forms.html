@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang='de'>
+
+    <head>
+        <meta charset='utf-8'></meta>
+        <title>Forms</title>
+    </head>
+
+    <body>
+        
+        <h2>method = "get"</h2>
+
+        <form action="forms.html" method="get">      <!-- action = Wohin die Daten gesendet werden sollen / method = get (in Url) oder post (nicht in Url) -->
+            <input type="text" name="username" placeholder="Bitte geben Sie Ihren namen ein."><br>
+            <br>
+            <input type="radio" name="geschlecht" value="m">Männlich
+            <input type="radio" name="geschlecht" value="w">Weiblich
+            <input type="radio" name="geschlecht" value="d">Divers<br>
+            <br>
+            <input type="email" name="email" placeholder="Bitte eine E-Mail Adresse eingeben"><br>
+            <br>
+            <input type="password" name="password" placeholder="Bitte geben Sie ein Kennwort ein."><br>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+        
+        <hr>
+
+        <h2>method = "post"</h2>    <!-- In den Entwicklertools "Netzwerk" / "Payload" werden die Daten trotzdem angezeigt -->
+
+        <form action="forms.html" method="post">
+            <input type="text" name="username" placeholder="Bitte geben Sie Ihren namen ein."><br>
+            <br>
+            <input type="radio" name="geschlecht" value="m">Männlich
+            <input type="radio" name="geschlecht" value="w">Weiblich
+            <input type="radio" name="geschlecht" value="d">Divers<br>
+            <br>
+            <input type="email" name="email" placeholder="Bitte eine E-Mail Adresse eingeben"><br>
+            <br>
+            <input type="password" name="password" placeholder="Bitte geben Sie ein Kennwort ein."><br>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+
+    </body>
+
+</html>
