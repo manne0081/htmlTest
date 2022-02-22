@@ -7,7 +7,48 @@
         <link rel='stylesheet' type='text/css' href='css/main.css'>
 
         <style>
-            h2 {
+            html, body {
+                height: 100%;
+                margin: 0;
+            }
+            .box {
+                display: flex;
+                flex-flow: column;
+                height: 100%;
+            }
+            .box .row-bg.header {
+                height: 110px;
+                background-image: url(assets/bckgrnd.gif);
+                background-repeat: repeat-x;
+                background-size: auto 110px;
+            }
+            .box .row-bg.content {
+                background-color: lightblue;
+                flex: 1 1 auto;
+            }
+
+            .row-bg.content .navigation {
+                background-color: olivedrab;
+                
+            }
+            .row-bg.content .content {
+                background-color: lime;
+                text-align: center;
+                
+            }
+            .row-bg.content .additional {
+                background-color: olivedrab;
+            }
+
+            .box .row-bg.footer {
+                background-color: lightsalmon;
+                flex: 0 1 40px;
+            }
+
+
+
+
+            /* h2 {
                 text-align: center;
                 margin-top: 0px;
                 padding-top: 20px;
@@ -54,18 +95,83 @@
             form > a {
                 color: #E5E5E5;
                 font-size: .8rem;
-            }
+            } */
         </style>
 
     </head>
 
     <body>
+
+        <div class="box">
+
+            <!-- === Header === -->
+            <div class="row-bg header">
+                <div class="row">
+
+                    <div class="col-4 logo-left">
+                        <a href="index.html"><img src="assets/01_logo02_transparent.png" alt="Firmenlogo"></a>
+                    </div> 
+
+                    <div class="col-4 logo-center">
+                        <img src="assets/02_header_anhaenger.png" alt="Logo-Anhaenger">
+                        <span>Beratungshotline: 555 0555 55 55555</span>
+                    </div>
+
+                    <div class="col-4 shoppingCard">
+                    </div>                    
+                </div>
+            </div>
+
+
+            <!-- === Content === -->
+            <div class="row-bg content">
+                <div class="row">
+
+                    <div class="col-2 navigation">col1</div>
+                    <div class="col-8 content">
+                        
+                        <form action="dashboard.html" method="post">
+                            <div class="input">
+                                <label for="username">Benutzername</label>
+                                <input type="text" name="username">
+                            </div>
+                            <div class="input">
+                                <label for="password">Kennwort</label>
+                                <input type="password" name="password">
+                            </div>
+        
+                            <button type="submit">Anmelden</a></button>
+        
+                            <a href="">Kennwort vergessen?</a>
+        
+                        </form>
+
+                    </div>
+                    <div class="col-2 additional">col3</div>
+
+                </div>
+            </div>
+
+
+            <!-- === Footer === -->
+            <!-- <div class="row-bg footer">
+                <p><b>footer</b> (fixed height)</p>
+            </div> -->
+
+        </div>
+        
+
+
+
+
+
+
         
         <!-- === Header Design === -->
-        <div class="header-nav">
+        <!-- <div class="header-nav"> -->
 
             <!-- === Header Content === -->
-            <div class="header-container">
+            <!-- <div class="header-container">
                 <div class="row">
 
                     <div class="col-4 logo-left">
@@ -73,7 +179,6 @@
                     </div>
                     
                     <div class="col-4 logo-center">
-                        <!-- <div class="logo"></div> -->
                         <img src="assets/02_header_anhaenger.png" alt="Logo-Anhaenger">
                         <span>Beratungshotline: 555 0555 55 55555</span>
                     </div>
@@ -82,10 +187,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <!-- === Bread Crumbs and Custom-Links === -->
-        <div class="breadCrumbs">
+        <!-- <div class="breadCrumbs">
 
             <div class="row">
                 <div class="col-6 left"><a href="index.html">Startseite</a></div>
@@ -94,9 +199,19 @@
                 </div>
             </div>
 
-        </div>
+        </div> -->
 
-        <div class="login-background">
+        <!-- === Content === -->
+        <!-- <div class="row">
+            <div class="col-12" style="background-color: lime; height: 100%;">test</div>
+        </div> -->
+
+
+
+
+
+
+        <!-- <div class="login-background">
 
             <h2>Mitarbeiter-Login</h2>
             <div class="login">
@@ -117,7 +232,7 @@
 
                 </form>
             </div>
-        </div>
+        </div> -->
 
 
 
